@@ -1,0 +1,320 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <script type="text/javascript" src="/_adapt/sanitizers"></script>
+    <script type="text/javascript" src="/adapt/frameworks/adapt/static/js/adapt.js"></script>
+    <script type="text/javascript" src="/adapt/frameworks/adapt/static/js/date.js"></script>
+    <script type="text/javascript" src="/adapt/frameworks/jquery/static/js/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script type="text/javascript" src="/adapt/frameworks/bootstrap/static/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/frameworks/bootstrap/static/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/adapt/frameworks/bootstrap/static/css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="/adapt/extensions/forms/static/css/forms.css">
+    <script type="text/javascript" src="/adapt/extensions/forms/static/js/forms.js"></script>
+    <script type="text/javascript" src="/_forms/validators"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/frameworks/font_awesome/static/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/adapt/extensions/contacts/static/css/contacts.css">
+    <script type="text/javascript" src="/adapt/extensions/contacts/static/js/contacts.js"></script>
+    <script type="text/javascript" src="/adapt/extensions/form_password_confirm/static/js/form_password_confirm.js"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/extensions/users/static/css/users.css">
+    <link type="text/css" rel="stylesheet" href="/adapt/extensions/administrator/static/css/administrator.css">
+    <script type="text/javascript" src="/adapt/extensions/administrator/static/js/administrator.js"></script>
+    <script type="text/javascript" src="/adapt/extensions/tinymce/static/js/tinymce.min.js"></script>
+    <script type="text/javascript">tinymce.init({
+            selector: 'textarea.tinymce',
+            plugins: 'table link image textcolor',
+            menubar: false,
+            toolbar: 'undo redo | styleselect | bold italic underline strikethrough forecolor | alignleft aligncenter alignright alignjustify | bullist numlist | table | link image',
+            statusbar: false
+        });</script>
+    <script type="text/javascript" src="/adapt/frameworks/moment/static/js/moment_locales.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/frameworks/bootstrap_datetimepicker/static/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="/adapt/frameworks/bootstrap_datetimepicker/static/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="/adapt/extensions/form_datetime_picker/static/js/form_datetime_picker.js"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/applications/octane_ats/static/css/master.css">
+    <script type="text/javascript" src="/adapt/applications/octane_ats/static/js/master.js"></script>
+    <style>body{ background-image: url('/adapt/applications/octane_ats/static/images/backgrounds/bgnd_4.jpg'); }</style>
+    <meta class="setting" name="locales.default_date_format" content="uk_date">
+    <meta class="setting" name="locales.default_time_format" content="uk_time">
+    <meta class="setting" name="locales.default_datetime_format" content="uk_datetime">
+    <meta class="setting" name="locales.default_date_pattern" content="d/m/Y">
+    <meta class="setting" name="locales.default_time_pattern" content="H:i">
+    <meta class="setting" name="locales.default_datetime_pattern" content="d/m/Y H:i">
+  </head>
+  <body>
+    <div class="controller root" id="adapt-id-3597">
+      <header>
+        <nav class="view navbar bootstrap navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#adapt-id-3601">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="/" class="navbar-brand">
+                <img src="/adapt/applications/octane_ats/static/images/family_logo.png">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="adapt-id-3601">
+              <ul class="nav navbar-nav view bootstrap menus">
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" id="adapt-id-3834">Friday <strong>facts</strong>
+                    <span class="view caret bootstrap"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="adapt-id-3834"></ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" id="adapt-id-3887">What's it like <strong>working here</strong>
+                    <span class="view caret bootstrap"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="adapt-id-3887"></ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" id="adapt-id-3940">Becoming part of <strong>our family</strong>
+                    <span class="view caret bootstrap"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="adapt-id-3940"></ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" id="adapt-id-3993">Making our people <strong>the best</strong>
+                    <span class="view caret bootstrap"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="adapt-id-3993"></ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav view bootstrap menus navbar-right">
+                <li role="presentation">
+                  <a href="/sign-in">Sign <strong>in</strong></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="view container bootstrap">
+        <div class="view row bootstrap">
+          <div class="view cell bootstrap col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <aside class="view box bootstrap octane-ats search">
+              <h3>Search for a job</h3>
+              <div class="content">job box</div>
+            </aside>
+            <aside class="view box bootstrap octane-ats">
+              <h3>Lastest jobs</h3>
+              <div class="content">
+                <ul></ul>
+              </div>
+            </aside>
+            <aside class="view box bootstrap octane-ats">
+              <h3>Sign in</h3>
+              <div class="content">
+                <form class="view form forms" action="/" method="post" data-form-id="1" id="adapt-id-4317">
+                  <input type="hidden" name="actions" value="sign-in">
+                  <input type="hidden" name="current_url" value="/sign-in">
+                  <div class="processing text-center hidden">
+                    <span class="fa fa-circle-o-notch fa-spin fa-5x"></span>
+                  </div>
+                  <div class="view form-page forms" id="adapt-id-4324">
+                    <div class="error-panel"></div>
+                    <div>
+                      <div class="view section-layout-standard forms row section">
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-hidden forms field input hidden">
+                                <input type="hidden" name="redirect_url" value>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-4396" class="control-label">Email
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="email" value class="form-control input-sm" id="adapt-id-4396" placeholder="someone@example.com" data-validator="email_address" data-max-length="256" data-mandatory="Yes">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-password forms form-group field input password">
+                                <label for="adapt-id-4424">Password
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="password" name="password" class="form-control input-sm" id="adapt-id-4424" data-validator="varchar" data-max-length="64" data-mandatory="Yes">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-checkbox forms field input checkbox">
+                                <label>
+                                  <input type="checkbox" name="stay_signed_in" value="Yes" id="adapt-id-4452" data-validator="varchar">
+Keep me signed in</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="controls text-right">
+                      <button class="btn btn-link control custom btn-sm" onclick="window.location='/forgot-password'; return void(0);">Forgot your password?</button>
+                      <button class="btn  control next btn-sm btn-danger">Sign in</button>
+                    </div>
+                  </div>
+                </form>
+                <hr>
+                <button class="btn btn-danger btn-block">Sign up now</button>
+              </div>
+            </aside>
+          </div>
+          <div class="view cell bootstrap col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="view login-panel users">
+<div class="view panel bootstrap panel-default">
+  <div class="panel-heading">
+    <h1 class="panel-title">Sign in</h1>
+  </div>
+  <div class="panel-body">
+    <div class="view row bootstrap">
+      <div class="view cell bootstrap col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h3>Sign in</h3>
+        <form class="view form forms" action="/" method="post" data-form-id="1" id="adapt-id-5042">
+          <input type="hidden" name="actions" value="sign-in">
+          <input type="hidden" name="current_url" value="/sign-in">
+          <div class="processing text-center hidden">
+            <span class="fa fa-circle-o-notch fa-spin fa-5x"></span>
+          </div>
+          <div class="view form-page forms" id="adapt-id-5049">
+            <div class="error-panel"></div>
+            <div>
+              <div class="view section-layout-standard forms row section">
+                <div>
+                  <div class="view group-layout-simple forms field-group col-xs-12">
+                    <div>
+                      <div class="view field-hidden forms field input hidden">
+                        <input type="hidden" name="redirect_url" value="/administrator/ats/roles/new">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view group-layout-simple forms field-group col-xs-12">
+                    <div>
+                      <div class="view field-input forms form-group field input text">
+                        <label for="adapt-id-5112" class="control-label">Email
+                          <sup>*
+                            <span class="sr-only"> (This field is required)</span>
+                          </sup>
+                        </label>
+                        <input type="text" name="email" value class="form-control" id="adapt-id-5112" placeholder="someone@example.com" data-validator="email_address" data-max-length="256" data-mandatory="Yes">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view group-layout-simple forms field-group col-xs-12">
+                    <div>
+                      <div class="view field-password forms form-group field input password">
+                        <label for="adapt-id-5140">Password
+                          <sup>*
+                            <span class="sr-only"> (This field is required)</span>
+                          </sup>
+                        </label>
+                        <input type="password" name="password" class="form-control" id="adapt-id-5140" data-validator="varchar" data-max-length="64" data-mandatory="Yes">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view group-layout-simple forms field-group col-xs-12">
+                    <div>
+                      <div class="view field-checkbox forms field input checkbox">
+                        <label>
+                          <input type="checkbox" name="stay_signed_in" value="Yes" id="adapt-id-5168" data-validator="varchar">
+Keep me signed in</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="controls text-right">
+              <button class="btn btn-link control custom" onclick="window.location='/forgot-password'; return void(0);">Forgot your password?</button>
+              <button class="btn btn-primary control next">Sign in</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="view cell bootstrap col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h3>Join now</h3>
+        <form class="view form forms" action="/" method="post" data-form-id="3" id="adapt-id-5383">
+          <input type="hidden" name="actions" value="join">
+          <input type="hidden" name="current_url" value="/sign-in">
+          <div class="processing text-center hidden">
+            <span class="fa fa-circle-o-notch fa-spin fa-5x"></span>
+          </div>
+          <div class="view form-page forms" id="adapt-id-5390">
+            <div class="error-panel"></div>
+            <div>
+              <div class="view section-layout-standard forms row section">
+                <div>
+                  <div class="view group-layout-simple forms field-group col-xs-12">
+                    <div>
+                      <div class="view field-input forms form-group field input text">
+                        <label for="adapt-id-5426" class="control-label">Email
+                          <sup>*
+                            <span class="sr-only"> (This field is required)</span>
+                          </sup>
+                        </label>
+                        <input type="text" name="email" value class="form-control" id="adapt-id-5426" data-validator="email_address" data-mandatory="Yes">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="view group-layout-simple forms field-group col-xs-12">
+                    <div>
+                      <div class="view field-password-confirm-indicator forms field input password-confirm-indicator">
+                        <div class="form-group">
+                          <label for="adapt-id-5455" class="control-label">Password
+                            <sup>*
+                              <span class="sr-only"> (This field is required)</span>
+                            </sup>
+                          </label>
+                          <input type="password" name="password" class="form-control" id="adapt-id-5455" data-validator="varchar" data-max-length="64" data-mandatory="Yes">
+                        </div>
+                        <div class="view bootstrap progress">
+                          <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow aria-valuemin aria-valuemax="100" style="width: 0%">
+                            <span class>Weak password</span>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="adapt-id-5581" class="control-label">Confirm password
+                            <sup>*
+                              <span class="sr-only"> (This field is required)</span>
+                            </sup>
+                          </label>
+                          <input type="password" name="confirm_password" class="form-control" id="adapt-id-5581" data-mandatory="Yes" data-max-length="64">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="controls text-right">
+              <button class="btn btn-primary control next">Join now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>footer</footer>
+    </div>
+    <!-- Powered by Adapt Framework - http://www.adaptframework.com -->
+  </body>
+</html>

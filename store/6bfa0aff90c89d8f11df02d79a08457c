@@ -1,0 +1,914 @@
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <script type="text/javascript" src="/_adapt/sanitizers"></script>
+    <script type="text/javascript" src="/adapt/frameworks/adapt/static/js/adapt.js"></script>
+    <script type="text/javascript" src="/adapt/frameworks/adapt/static/js/date.js"></script>
+    <script type="text/javascript" src="/adapt/frameworks/jquery/static/js/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script type="text/javascript" src="/adapt/frameworks/bootstrap/static/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/frameworks/bootstrap/static/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/adapt/frameworks/bootstrap/static/css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="/adapt/extensions/forms/static/css/forms.css">
+    <script type="text/javascript" src="/adapt/extensions/forms/static/js/forms.js"></script>
+    <script type="text/javascript" src="/_forms/validators"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/frameworks/font_awesome/static/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="/adapt/extensions/contacts/static/css/contacts.css">
+    <script type="text/javascript" src="/adapt/extensions/contacts/static/js/contacts.js"></script>
+    <script type="text/javascript" src="/adapt/extensions/form_password_confirm/static/js/form_password_confirm.js"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/extensions/users/static/css/users.css">
+    <link type="text/css" rel="stylesheet" href="/adapt/extensions/administrator/static/css/administrator.css">
+    <script type="text/javascript" src="/adapt/extensions/administrator/static/js/administrator.js"></script>
+    <script type="text/javascript" src="/adapt/extensions/tinymce/static/js/tinymce.min.js"></script>
+    <script type="text/javascript">tinymce.init({
+            selector: 'textarea.tinymce',
+            plugins: 'table link image textcolor',
+            menubar: false,
+            toolbar: 'undo redo | styleselect | bold italic underline strikethrough forecolor | alignleft aligncenter alignright alignjustify | bullist numlist | table | link image',
+            statusbar: false
+        });</script>
+    <script type="text/javascript" src="/adapt/frameworks/moment/static/js/moment_locales.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/frameworks/bootstrap_datetimepicker/static/css/bootstrap-datetimepicker.css">
+    <script type="text/javascript" src="/adapt/frameworks/bootstrap_datetimepicker/static/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="/adapt/extensions/form_datetime_picker/static/js/form_datetime_picker.js"></script>
+    <link type="text/css" rel="stylesheet" href="/adapt/applications/octane_ats/static/css/master.css">
+    <script type="text/javascript" src="/adapt/applications/octane_ats/static/js/master.js"></script>
+    <style>body{ background-image: url('/adapt/applications/octane_ats/static/images/backgrounds/bgnd_4.jpg'); }</style>
+    <meta class="setting" name="locales.default_date_format" content="uk_date">
+    <meta class="setting" name="locales.default_time_format" content="uk_time">
+    <meta class="setting" name="locales.default_datetime_format" content="uk_datetime">
+    <meta class="setting" name="locales.default_date_pattern" content="d/m/Y">
+    <meta class="setting" name="locales.default_time_pattern" content="H:i">
+    <meta class="setting" name="locales.default_datetime_pattern" content="d/m/Y H:i">
+  </head>
+  <body>
+    <div class="controller root" id="adapt-id-3628">
+      <header>
+        <nav class="view navbar bootstrap navbar-default navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#adapt-id-3632">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a href="/" class="navbar-brand">
+                <img src="/adapt/applications/octane_ats/static/images/family_logo.png">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="adapt-id-3632">
+              <ul class="nav navbar-nav view bootstrap menus">
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" id="adapt-id-3865">Friday <strong>facts</strong>
+                    <span class="view caret bootstrap"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="adapt-id-3865"></ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" id="adapt-id-3918">What's it like <strong>working here</strong>
+                    <span class="view caret bootstrap"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="adapt-id-3918"></ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" id="adapt-id-3971">Becoming part of <strong>our family</strong>
+                    <span class="view caret bootstrap"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="adapt-id-3971"></ul>
+                </li>
+                <li role="presentation" class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false" id="adapt-id-4024">Making our people <strong>the best</strong>
+                    <span class="view caret bootstrap"></span>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="adapt-id-4024"></ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav view bootstrap menus navbar-right">
+                <li role="presentation">
+                  <a href="/sign-out">Sign <strong>out</strong></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="view container bootstrap">
+        <div class="view row bootstrap">
+          <div class="view cell bootstrap col-lg-3 col-md-3 col-sm-12 col-xs-12">
+            <aside class="view box bootstrap octane-ats">
+              <h3>My Applications</h3>
+              <div class="content">App list here</div>
+            </aside>
+            <aside class="view box bootstrap octane-ats search">
+              <h3>Search for a job</h3>
+              <div class="content">job box</div>
+            </aside>
+            <aside class="view box bootstrap octane-ats">
+              <h3>Lastest jobs</h3>
+              <div class="content">
+                <ul></ul>
+              </div>
+            </aside>
+          </div>
+          <div class="view cell bootstrap col-lg-9 col-md-9 col-sm-12 col-xs-12">
+            <div class="controller vacancy" id="adapt-id-4227">
+              <div class="application-form">
+                <h1>Host 
+                  <span>St. Davids</span>
+                </h1>
+                <p class="lead">Thank you for choosing to work at TGI Fridays, please complete the application form below to get started.  Please be aware that if you apply for more than one job then you will recieve seperate emails for each role.</p>
+                <form class="view form forms" action="/applications/apply" method="post" data-form-id="16" id="adapt-id-4853">
+                  <input type="hidden" name="actions" value="applications/save">
+                  <input type="hidden" name="current_url" value="/vacancies/application">
+                  <div class="steps">
+                    <div class="view form-step forms selected" data-form-page-id="adapt-id-4860">
+                      <label>Step 1</label>
+                      <p>About you</p>
+                    </div>
+                    <div class="view form-step forms" data-form-page-id="adapt-id-5485">
+                      <label>Step 2</label>
+                      <p>Eligibility</p>
+                    </div>
+                    <div class="view form-step forms" data-form-page-id="adapt-id-6838">
+                      <label>Step 3</label>
+                      <p>Flexibility</p>
+                    </div>
+                    <div class="view form-step forms" data-form-page-id="adapt-id-8796">
+                      <label>Step 4</label>
+                      <p>Experience</p>
+                    </div>
+                    <div class="view form-step forms" data-form-page-id="adapt-id-11568">
+                      <label>Step 5</label>
+                      <p>And finally...</p>
+                    </div>
+                  </div>
+                  <div class="processing text-center hidden">
+                    <span class="fa fa-circle-o-notch fa-spin fa-5x"></span>
+                  </div>
+                  <div class="view form-page forms" data-step-label="Step 1" data-step-description="About you" id="adapt-id-4860">
+                    <div class="error-panel"></div>
+                    <div>
+                      <h2>All about you</h2>
+                      <p>We are please to meet you, please take a moment to tell us who you are and how we can contact you. All communication is over email so you will need a valid email address, also we send notification by text messages just to make sure you don't miss anything.</p>
+                      <div class="view section-layout-three-col forms row section">
+                        <h3 class="first-only col-xs-12">Hello there, and you are?</h3>
+                        <p class="first-only col-xs-12">Lets get to know each other, tell us all about you and how we can contact you.</p>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-select forms form-group field input select">
+                                <label for="adapt-id-4922">Title?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <select class="view select bootstrap form-control" name="contact[title]" id="adapt-id-4922" data-mandatory="Yes">
+                                  <option>Mr</option>
+                                  <option>Mrs</option>
+                                  <option>Miss</option>
+                                  <option>Ms</option>
+                                </select>
+                                <p class="help-block">How should we address you?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-4980" class="control-label">First name
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="contact[forename]" value class="form-control" id="adapt-id-4980" placeholder="Jack" data-validator="name" data-formatter="name" data-max-length="32" data-mandatory="Yes">
+                                <p class="help-block">What's your firstname?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5014" class="control-label">Middle names</label>
+                                <input type="text" name="contact[middle_names]" value class="form-control" id="adapt-id-5014" data-validator="name" data-formatter="name" data-max-length="32">
+                                <p class="help-block">If you have any middle names, please tell us!</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5030" class="control-label">Family name
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="contact[surname]" value class="form-control" id="adapt-id-5030" placeholder="Daniels" data-validator="name" data-formatter="name" data-max-length="32" data-mandatory="Yes">
+                                <p class="help-block">What is your family name?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5064" class="control-label">Whats your nickname?</label>
+                                <input type="text" name="contact[nickname]" value class="form-control" id="adapt-id-5064" data-validator="varchar" data-max-length="32">
+                                <p class="help-block">Tell us what you like to be known as.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-date-picker forms form-group field input text form-datetime-picker">
+                                <label for="adapt-id-5080" class="control-label">Date of birth
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="contact[date_of_birth]" value class="form-control" id="adapt-id-5080" placeholder="dd/mm/yyy" data-validator="date" data-formatter="locales_date" data-unformatter="locales_date" data-mandatory="Yes">
+                                <p class="help-block">So that we never forget your birthday!</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="view section-layout-three-col forms row section">
+                        <h3 class="first-only col-xs-12">Where do you live?</h3>
+                        <p class="first-only col-xs-12">This could be your home address, or if you're a student living away from home you can give us your student address.</p>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5123" class="control-label">Flat details</label>
+                                <input type="text" name="contact_address[address_1][]" value class="form-control" id="adapt-id-5123" placeholder="Flat 2a" data-validator="varchar" data-max-length="20">
+                                <p class="help-block">Flat or apartment details</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5139" class="control-label">Building / House name</label>
+                                <input type="text" name="contact_address[address_2][]" value class="form-control" id="adapt-id-5139" placeholder="Fridays House" data-validator="varchar" data-max-length="32">
+                                <p class="help-block">Does your house or building have a name?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5155" class="control-label">Building / House number</label>
+                                <input type="text" name="contact_address[address_3][]" value class="form-control" id="adapt-id-5155" placeholder="123" data-validator="varchar" data-max-length="12">
+                                <p class="help-block">Does your house or building have a number?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5171" class="control-label">Road name</label>
+                                <input type="text" name="contact_address[address_4][]" value class="form-control" id="adapt-id-5171" placeholder="Friday Road" data-validator="varchar" data-max-length="32">
+                                <p class="help-block">Whats the name of your street or road?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5187" class="control-label">District</label>
+                                <input type="text" name="contact_address[address_5][]" value class="form-control" id="adapt-id-5187" data-validator="varchar" data-max-length="32">
+                                <p class="help-block">Does your address have a distict?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5203" class="control-label">Town or City
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="contact_address[address_6][]" value class="form-control" id="adapt-id-5203" placeholder="Luton" data-validator="varchar" data-max-length="32" data-mandatory="Yes">
+                                <p class="help-block">Which town or city do you live in?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5237" class="control-label">County</label>
+                                <input type="text" name="contact_address[address_7][]" value class="form-control" id="adapt-id-5237" placeholder="Bedforshire" data-max-length="32">
+                                <p class="help-block">What county do you live in?</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5253" class="control-label">Postcode
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="contact_address[address_8][]" value class="form-control" id="adapt-id-5253" placeholder="LU3 1TN" data-validator="uk_postcode" data-formatter="uk_postcode" data-unformatter="uk_postcode" data-max-length="9" data-mandatory="Yes">
+                                <p class="help-block">What's your postcode?</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="view section-layout-three-col forms row section">
+                        <h3 class="first-only col-xs-12">How do we contact you?</h3>
+                        <p class="first-only col-xs-12">We need your email address and mobile as a minumim.</p>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5296" class="control-label">Email
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="contact_email[email][]" value class="form-control" id="adapt-id-5296" placeholder="jack.daniels@tgifriday.co.uk" data-validator="email_address" data-max-length="255" data-mandatory="Yes">
+                                <p class="help-block">We need your email address to keep in touch.</p>
+                              </div>
+                              <div class="view field-hidden forms field input hidden">
+                                <input type="hidden" name="contact_email[contact_email_type_id][]" value="1">
+                              </div>
+                              <div class="view field-hidden forms field input hidden">
+                                <input type="hidden" name="contact_email[contact_email_id][]" value="1">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5344" class="control-label">Home phone</label>
+                                <input type="text" name="contact_phone[phone_number][]" value class="form-control" id="adapt-id-5344" placeholder="Home phone number" data-validator="uk_phone_home" data-formatter="uk_phone" data-unformatter="phone" data-max-length="16">
+                                <p class="help-block">Whats your home phone number?</p>
+                              </div>
+                              <div class="view field-hidden forms field input hidden">
+                                <input type="hidden" name="contact_phone[contact_phone_data_type_id][]" value="1">
+                              </div>
+                              <div class="view field-hidden forms field input hidden">
+                                <input type="hidden" name="contact_phone[contact_phone_id][]" value="1">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-5374" class="control-label">Mobile phone
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="contact_phone[phone_number][]" value class="form-control" id="adapt-id-5374" placeholder="Mobile phone number" data-validator="uk_phone_mobile" data-formatter="uk_phone" data-unformatter="phone" data-max-length="16" data-mandatory="Yes">
+                                <p class="help-block">Whats your mobile phone number?</p>
+                              </div>
+                              <div class="view field-hidden forms field input hidden">
+                                <input type="hidden" name="contact_phone[contact_phone_data_type_id][]" value="2">
+                              </div>
+                              <div class="view field-hidden forms field input hidden">
+                                <input type="hidden" name="contact_phone[contact_phone_id][]" value="1">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="view section-layout-standard forms row section">
+                        <h3 class="first-only col-xs-12">Terms &amp; Conditions</h3>
+                        <p class="first-only col-xs-12">Please read over our terms and conditions before continuing.</p>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-checkbox forms field input checkbox">
+                                <label>
+                                  <input type="checkbox" name="ats_application[terms_agreed]" value="Yes" id="adapt-id-5431" data-validator="uk_phone_mobile" data-formatter="uk_phone" data-unformatter="phone" data-mandatory="Yes">
+I agree to the terms &amp; conditions                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <p class="help-block">Please take a moment to read the <a href="/policies/terms">terms &amp; conditions</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="controls text-right">
+                      <button class="btn btn-default control custom">Save and continue later</button>
+                      <button class="btn btn-danger control next">Next page</button>
+                    </div>
+                  </div>
+                  <div class="view form-page forms hidden" data-step-label="Step 2" data-step-description="Eligibility" id="adapt-id-5485">
+                    <div class="error-panel"></div>
+                    <div>
+                      <h2>Eligibility</h2>
+                      <div class="view section-layout-standard forms row section">
+                        <h3 class="first-only col-xs-12">Right to work in the UK</h3>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view eligibility bootstrap octane-ats">
+                                <p>We need to confirm that you are eligible to work in the UK, if you are invited to an interview you will need to bring with you one of the following.</p>
+                                <p>
+                                  <strong>If you are from the UK you will need to bring one of the following:</strong>
+                                </p>
+                                <ul>
+                                  <li>UK Passport</li>
+                                  <li>Full UK birth certificate or full UK adoption certificate with proof of your NI number</li>
+                                  <li>A document issued by a government agency</li>
+                                  <li>NI card or previous company P45/P60 showing your NI number</li>
+                                </ul>
+                                <p>
+                                  <strong>If you are from the EU you will need to bring one of the following:</strong>
+                                </p>
+                                <ul>
+                                  <li>EU Issued Passport</li>
+                                  <li>National Identity card</li>
+                                </ul>
+                                <p>
+                                  <strong>If you are from elsewhere in the world:</strong>
+                                </p>
+                                <ul>
+                                  <li>Passport with documentation of Permanent Residence or Right to Work</li>
+                                </ul>
+                                <p>Further information can be found on 
+                                  <a href="http://www.ukba.homeoffice.gov.uk" title="UK Visas and Immigration">www.ukba.homeoffice.gov.uk</a>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-checkbox forms field input checkbox">
+                                <label>
+                                  <input type="checkbox" name="ats_application[eligible]" value="Yes" id="adapt-id-5576" data-validator="varchar" data-mandatory="Yes">
+I confirm that I have the required documentation and will bring it with me if I am invited to an interview.                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <p class="help-block">This box must be ticked for you to proceed with application.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="view section-layout-standard forms row section">
+                        <h3 class="first-only col-xs-12">Convictions</h3>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-select forms form-group field input select">
+                                <label for="adapt-id-5618">Have you ever been convicted of any criminal offences which are not yet "spent" under The Rehabilitation of Offenders Act 1974, or The Rehabilitation of Offenders(NI) Order 1978?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <select class="view select bootstrap form-control" name="ats_application[convictions]" id="adapt-id-5618" data-mandatory="Yes">
+                                  <option>No</option>
+                                  <option>Yes</option>
+                                </select>
+                                <p class="help-block">You do not need to declare convictions that are spent. (Ex-offenders will be considered on an individual basis and the nature of their offence will be taken into account in the recruitment decision)</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-select forms form-group field input select">
+                                <label for="adapt-id-5664">Do you have any criminal prosecutions pending?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <select class="view select bootstrap form-control" name="ats_application[pending_convictions]" id="adapt-id-5664" data-mandatory="Yes">
+                                  <option>No</option>
+                                  <option>Yes</option>
+                                </select>
+                                <p class="help-block">You do not need to include minor motoring offences such as speeding.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="controls text-right">
+                      <button class="btn btn-default control previous">Go back</button>
+                      <button class="btn btn-default control custom">Save and continue later</button>
+                      <button class="btn btn-danger control next">Next step</button>
+                    </div>
+                  </div>
+                  <div class="view form-page forms hidden" data-step-label="Step 3" data-step-description="Flexibility" id="adapt-id-6838">
+                    <div class="error-panel"></div>
+                    <div>
+                      <h2>Flexibility and Travel</h2>
+                      <div class="view section-layout-standard forms row section">
+                        <h3 class="first-only col-xs-12">Travel</h3>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-select forms form-group field input select">
+                                <label for="adapt-id-6902">Our commitment to guest obsession mean we need team members to start early and finish late, are you able to travel to and from work on early mornings and late at night after a busy evening shift?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <select class="view select bootstrap form-control" name="ats_application[can_travel]" id="adapt-id-6902" data-mandatory="Yes">
+                                  <option>Yes</option>
+                                  <option>No</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-select forms form-group field input select">
+                                <label for="adapt-id-6942">Do you have any holidays booked in the next six weeks?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <select class="view select bootstrap form-control" name="ats_application[holidays]" id="adapt-id-6942" data-mandatory="Yes">
+                                  <option>Yes</option>
+                                  <option>No</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="view section-layout-standard forms row section">
+                        <h3 class="first-only col-xs-12">Flexibility</h3>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-select forms form-group field input select">
+                                <label for="adapt-id-6990">We like to provide excellent service at all times, meaning we are at our busiest at weekends and often late in the evening, are you happy and able to work these?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <select class="view select bootstrap form-control" name="ats_application[busy_times]" id="adapt-id-6990" data-mandatory="Yes">
+                                  <option>Yes</option>
+                                  <option>No</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-select forms form-group field input select">
+                                <label for="adapt-id-7030">As part of your training, you will be required to do homework as well as your training shifts. Is this something you will be able to find time for?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <select class="view select bootstrap form-control" name="ats_application[home_work]" id="adapt-id-7030" data-mandatory="Yes">
+                                  <option>Yes</option>
+                                  <option>No</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="view section-layout-standard forms row section">
+                        <h3 class="first-only col-xs-12">Availability</h3>
+                        <p class="first-only col-xs-12">Please choose the times that you are able to work.</p>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view availability bootstrap octane-ats">
+                                <div class="row">
+                                  <div class="col-sm-offset-3 col-sm-3 hidden-xs">
+                                    <label>All Afternoons</label>
+                                  </div>
+                                  <div class="col-sm-3 hidden-xs">
+                                    <label>All Evenings</label>
+                                  </div>
+                                  <div class="col-sm-3 hidden-xs">
+                                    <label>All day</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <label>Mondays</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_monday_afternoon]" value="Yes">
+ 12pm - 5pm</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_monday_evening]" value="Yes">
+ 5pm - Close</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_monday]" value="Yes">
+ 12pm - Close</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <label>Tuesdays</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_tuesday_afternoon]" value="Yes">
+ 12pm - 5pm</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_tuesday_evening]" value="Yes">
+ 5pm - Close</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_tuesday]" value="Yes">
+ 12pm - Close</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <label>Wednesdays</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_wednesday_afternoon]" value="Yes">
+ 12pm - 5pm</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_wednesday_evening]" value="Yes">
+ 5pm - Close</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_wednesday]" value="Yes">
+ 12pm - Close</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <label>Thursdays</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_thursday_afternoon]" value="Yes">
+ 12pm - 5pm</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_thursday_evening]" value="Yes">
+ 5pm - Close</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_thursday]" value="Yes">
+ 12pm - Close</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <label>(TGI) Fridays</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_friday_afternoon]" value="Yes">
+ 12pm - 5pm</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_friday_evening]" value="Yes">
+ 5pm - Close</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_friday]" value="Yes">
+ 12pm - Close</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <label>Saturdays</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_saturday_afternoon]" value="Yes">
+ 12pm - 5pm</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_saturday_evening]" value="Yes">
+ 5pm - Close</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_saturday]" value="Yes">
+ 12pm - Close</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <label>Sundays</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_sunday_afternoon]" value="Yes">
+ 12pm - 5pm</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_sunday_evening]" value="Yes">
+ 5pm - Close</label>
+                                  </div>
+                                  <div class="col-sm-3">
+                                    <label>
+                                      <input type="checkbox" name="ats_application[available_sunday]" value="Yes">
+ 12pm - Close</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="controls text-right">
+                      <button class="btn btn-default control previous">Go back</button>
+                      <button class="btn btn-default control custom">Save and continue later</button>
+                      <button class="btn btn-danger control next">Next step</button>
+                    </div>
+                  </div>
+                  <div class="view form-page forms hidden" data-step-label="Step 4" data-step-description="Experience" id="adapt-id-8796">
+                    <div class="error-panel"></div>
+                    <div>
+                      <h2>Experience</h2>
+                      <div class="view section-layout-three-col forms row section">
+                        <h3 class="first-only col-xs-12">Who are you currently working with?</h3>
+                        <p class="first-only col-xs-12">Please tell us a little about your current employer, we will never contact them without your permission first and only if we are considering offering you the position.</p>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-8861" class="control-label">Current employer
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="ats_application[current_employer]" value class="form-control" id="adapt-id-8861" data-validator="varchar" data-max-length="32" data-mandatory="Yes">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-8889" class="control-label">Job title
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="ats_application[current_job_title]" value class="form-control" id="adapt-id-8889" data-validator="varchar" data-max-length="32" data-mandatory="Yes">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-sm-4">
+                            <div>
+                              <div class="view field-input forms form-group field input text">
+                                <label for="adapt-id-8917" class="control-label">Salary
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <input type="text" name="ats_application[current_salary]" value class="form-control" id="adapt-id-8917" data-validator="varchar" data-max-length="32" data-mandatory="Yes">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="view section-layout-standard forms row section">
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-textarea forms form-group field input textarea">
+                                <label for="adapt-id-8952">Responsibilities
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <textarea class="view textarea bootstrap form-control" name="ats_application[current_employment_resposibilities]" rows="3" id="adapt-id-8952" data-validator="text" data-mandatory="Yes"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="controls text-right">
+                      <button class="btn btn-default control previous">Go back</button>
+                      <button class="btn btn-default control custom">Save and continue later</button>
+                      <button class="btn btn-danger control next">Next step</button>
+                    </div>
+                  </div>
+                  <div class="view form-page forms hidden" data-step-label="Step 5" data-step-description="And finally..." id="adapt-id-11568">
+                    <div class="error-panel"></div>
+                    <div>
+                      <h2>And finally...</h2>
+                      <div class="view section-layout-standard forms row section">
+                        <h3 class="first-only col-xs-12">Getting to know you a little better</h3>
+                        <div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-textarea forms form-group field input textarea">
+                                <label for="adapt-id-11632">Why do you want to join the Fridays family?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <textarea class="view textarea bootstrap form-control" name="ats_application[why_work_here]" rows="3" id="adapt-id-11632" data-validator="text" data-mandatory="Yes"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-textarea forms form-group field input textarea">
+                                <label for="adapt-id-11660">What makes you smile?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <textarea class="view textarea bootstrap form-control" name="ats_application[what_makes_you_smile]" rows="3" id="adapt-id-11660" data-validator="text" data-mandatory="Yes"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-textarea forms form-group field input textarea">
+                                <label for="adapt-id-11688">Tell us about a time that you created a memory for someone else?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <textarea class="view textarea bootstrap form-control" name="ats_application[memories]" rows="3" id="adapt-id-11688" data-validator="text" data-mandatory="Yes"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-textarea forms form-group field input textarea">
+                                <label for="adapt-id-11716">What has been your greatest achievement and how did you achieve it?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <textarea class="view textarea bootstrap form-control" name="ats_application[greatest_achievement]" rows="3" id="adapt-id-11716" data-validator="text" data-mandatory="Yes"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-textarea forms form-group field input textarea">
+                                <label for="adapt-id-11744">How do you use your personality and skills in your work?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <textarea class="view textarea bootstrap form-control" name="ats_application[skills_in_work]" rows="3" id="adapt-id-11744" data-validator="text" data-mandatory="Yes"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="view group-layout-simple forms field-group col-xs-12">
+                            <div>
+                              <div class="view field-textarea forms form-group field input textarea">
+                                <label for="adapt-id-11772">Describe in your opinion what makes a great guest experience?
+                                  <sup>*
+                                    <span class="sr-only"> (This field is required)</span>
+                                  </sup>
+                                </label>
+                                <textarea class="view textarea bootstrap form-control" name="ats_application[great_guest_experience]" rows="3" id="adapt-id-11772" data-validator="text" data-mandatory="Yes"></textarea>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="controls text-right">
+                      <button class="btn btn-default control previous">Go back</button>
+                      <button class="btn btn-default control custom">Save and continue later</button>
+                      <button class="btn btn-danger control next">Apply for the job!</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>footer</footer>
+    </div>
+    <!-- Powered by Adapt Framework - http://www.adaptframework.com -->
+  </body>
+</html>
